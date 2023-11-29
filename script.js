@@ -7,6 +7,19 @@ function attachListeners() {
     if (logoutButton) {
         logoutButton.addEventListener('click', logout);
     }
+
+    let addButton = document.querySelector('.add_file');
+    if (addButton) {
+        addButton.addEventListener('click', addFile);
+    }
+}
+
+function addFile() {
+    let filebar = document.querySelector('.files');
+    let newFileButton = document.createElement('button');
+    newFileButton.textContent = 'My New File';
+    newFileButton.addEventListener('click', () => console.log("Go to new note"));
+    filebar.appendChild(newFileButton);
 }
 
 function checkPage() {

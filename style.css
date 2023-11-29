@@ -180,3 +180,18 @@ body {
     line-height: 28.28px;
     font-size: 20px;
 }
+
+.files {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.files > button {
+    width: 80%;
+    height: 28px;
+    font-size: 20px;
+}
