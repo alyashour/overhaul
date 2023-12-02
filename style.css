@@ -194,10 +194,8 @@ body {
     width: 80%;
     height: 28px;
     font-size: 20px;
-<<<<<<< Updated upstream
 }
-=======
-}
+
 /*Downloads page*/
 .downloadbtn {
     display: flex;
@@ -317,5 +315,3 @@ a.download-link {
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: var(--btn-primary);}
-  
->>>>>>> Stashed changes
