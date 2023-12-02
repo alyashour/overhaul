@@ -1,11 +1,24 @@
-body {
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Primary color variables */
+:root {
     --btn-primary: #7D7DF7;
     --border: #C0BFBF;
     --link-color: #505F98;
-    --btn-primary-dark: #111b47;
-    --btn-secondary: transparent;
+    --btn-primary-dark: #2f4711;
+    --btn-secondary: #111b47; /* Secondary button color for contrast */
+    --text-muted: #6c757d; /* Muted text for less important elements */
+    --background-color: #f8f9fa; /* Background color for price boxes */
+    --shadow: rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
+/* Navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -32,66 +45,118 @@ body {
     gap: 24px;
 }
 
-.head {
-    margin: 128px 0 0 48px;
-    width: calc(100% - 648px);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-.title {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.title > .title {
-    font-size: 64px;
-    font-family: 'Roboto';
-}
-
-.title > img {
-    margin: -12px 0;
-}
-
-.description {
-    width: 80%;
-    display: inline;
-    font-size: 14px;
-    font-family: 'Roboto';
-}
-
-.actions {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 10;
-}
-
-.actions > a {
-    padding: 8px 0;
-    width: 45%;
-    font-size: 16px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+/* Button styles */
+.btn {
     text-decoration: none;
-    text-align: center;
-}
-
-.signup {
-    background-color: var(--btn-primary-dark);
+    background-color: var(--btn-primary);
+    padding: 12px 20px;
     color: white;
+    font-size: 16px;
     border: none;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.signin {
-    background-color: var(--btn-secondary);
+.btn:hover {
+    background-color: var(--btn-primary-dark);
+    color: white; /* Ensuring text remains white on hover */
+}
+
+/* Container and pricing styles */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.container h2 {
     color: black;
-    border: 2px solid black;
+    font-size: 36px;
+    margin-bottom: 2rem;
 }
 
+.price-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.price-col {
+    background: var(--background-color);
+    padding: 40px 30px; /* Adjusted padding for slimmer look */
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 4px 8px var(--shadow);
+    transition: transform 0.3s ease;
+    width: 300px; /* Fixed width for slimmer boxes */
+    min-height: 450px; /* Fixed min-height for longer boxes */
+}
+
+.price-col:hover {
+    transform: translateY(-5px);
+}
+
+.price-col p {
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--btn-primary-dark);
+}
+
+.price-col h3 {
+    font-size: 24px;
+    margin: 30px 0;
+    font-weight: 600;
+    
+}
+
+.price-col h3 span {
+    font-size: 18px;
+    color: var(--text-muted);
+}
+
+.price-col ul {
+    list-style-type: none; /* Remove default list styling */
+}
+
+.price-col ul li {
+    margin: 15px 0;
+    position: relative;
+    padding-left: 24px;
+    font-size: 16px;
+    color: var(--text-muted);
+}
+
+.price-col ul li::before {
+    content: '✔'; /* Checkmark instead of bullet */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--btn-primary-dark);
+    font-size: 18px;
+}
+
+.price-col button {
+    background: var(--btn-secondary); /* Button color for premium option */
+    width: 100%;
+    padding: 14px 0;
+    color: white;
+    font-size: 15px;
+    border: none; /* Removed border */
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.price-col button:hover {
+    background: #0a223f; /* Darken on hover, ensure text remains visible */
+}
+
+/* Splash and other unique styles */
 .splash {
     position: fixed;
     bottom: 0;
@@ -105,13 +170,6 @@ body {
     bottom: 48px;
     right: 124px;
     height: calc(90vh - 128px);
-}
-
-.btn {
-    text-decoration: none;
-    background-color: var(--btn-primary);
-    padding: 4px 12px;
-    color: white !important;
 }
 
 .copy {
