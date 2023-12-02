@@ -2,133 +2,145 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>InkLink</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="assets/link.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>InkLink</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="assets/link.png" type="image/x-icon">
 
-    <style>
-        /* The side navigation menu */
-        .sidenav {
-            height: 100%; /* 100% Full-height */
-            width: 0; /* 0 width - change this with JavaScript */
-            position: fixed; /* Stay in place */
-            z-index: 20; /* Stay on top */
-            top: 0; /* Stay at the top */
-            right: 0;
-            overflow-x: hidden; /* Disable horizontal scroll */
-            padding-top: 80px; /* Place content 80px from the top */
-            padding-left: 10px;
-            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  <style>
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 20;
+      top: 0;
+      right: 0;
+      overflow-x: hidden;
+      padding-top: 80px;
+      padding-left: 10px;
+      transition: 0.5s;
+      background: rgb(255, 255, 255);
+      border-radius: 10px;
+    }
 
-            background: rgba(255, 255, 255); /* Tinted white background */
-            border-radius: 10px;
-        }
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
 
-        /* The navigation menu links */
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
 
-        /* When you mouse over the navigation links, change their color */
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
 
-        /* Position and style the close button (top right corner) */
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
+    .main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
 
-        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-        .main {
-            transition: margin-left .5s;
-            padding: 20px;
-        }
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
 
-        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
 
-        .bar {
-            width: 35px;
-            height: 5px;
-            background-color: black;
-            margin: 6px 0 6px 6px;
-        }
+    .bar {
+      width: 35px;
+      height: 5px;
+      background-color: black;
+      margin: 6px 0 6px 6px;
+    }
 
-        .three-bar-menu-btn:hover .bar{
-            background-color: purple;
-            transition: background-color .5s;
-        }
-    </style>
+    .three-bar-menu-btn:hover .bar {
+      background-color: purple;
+      transition: background-color .5s;
+    }
+  </style>
 </head>
 
 <body>
-<main>
-    <!-- navbar --->
+  <main>
+    <!-- navbar -->
     <div class="navbar">
-        <div class="pages">
-            <a href="index.html">
-                <img src="assets/logo.png" alt="logo">
-            </a>
-            <a href="index.html">Home</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="compare.html">Compare</a>
-            <a href="help.html">Help</a>
-        </div>
+      <!-- pages links-->
+      <div class="pages">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="logo">
+        </a>
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="compare.html">Compare</a>
+        <a href="help.html">Help</a>
+      </div>
 
-        <!-- download button -->
-        <div class="general">
-            <a href="download.html" class="btn">Free Download</a>
+      <!-- download button -->
+      <div class="general">
+        <div class="dropdown">
+          <div class="dropbtn">
+            <a class="download-link" href="download.html">Download</a>
+            <div class="arrow"></div>
+          </div>
+          <div class="dropdown-content">
+            <a href="#">Windows</a>
+            <a href="#">macOS</a>
+            <a href="#">IOS</a>
+            <a href="#">Android</a>
+          </div>
         </div>
+      </div>
 
-        <!-- expand sign in & more menu -->
-        <span onclick="openNav()" class="three-bar-menu-btn">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </span>
-        <div id="mySidenav" class="sidenav" onmouseleave="closeNav()">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a>Colorblind modes</a>
-            <a>Dark/Light mosde</a>
-            <a>Log in?</a>
-        </div>
+      <!-- expand sign in & more menu -->
+      <span onclick="openNav()" class="three-bar-menu-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </span>
+
+      <div id="mySidenav" class="sidenav" onmouseleave="closeNav()">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Colorblind modes</a>
+        <a href="#">Dark/Light mode</a>
+        <a href="#">Log in?</a>
+      </div>
     </div>
+
     <div class="main">
-        <div class="head">
-            <div class="title">
-                <img src="assets/link.png" alt="link log"/>
-                <span class="title">To the Future</span>
-            </div>
-            <div class="description">
-                Access a new way to note-take, connect, and link with other students through new solutions to
-                accessibility.
-            </div>
-            <div class="actions">
-                <a href="register.html" class="signup">Sign Up</a>
-                <a href="login.html" class="signin">Already a User? Sign In</a>
-            </div>
+      <div class="head">
+        <div class="title">
+          <img src="assets/link.png" />
+          <span class="title">To the Future</span>
         </div>
-        <img src="assets/phone-demo.png" class="phone" alt=""/>
-        <img src="assets/splash-img.png" class="splash" alt=""/>
+        <div class="description">
+          Access a new way to note-take, connect, and link with other students through new solutions to accessibility.
+        </div>
+        <div class="actions">
+          <a href="register.html" class="signup">Sign Up</a>
+          <a href="login.html" class="signin">Already a User? Sign In</a>
+        </div>
+      </div>
+      <img src="assets/phone-demo.png" class="phone" />
+      <img src="assets/splash-img.png" class="splash" />
     </div>
-    <span class="copy">Copyright © 2023, Western Developers Society</span>
-</main>
-<script src="script.js"></script>
+    <span class="copy">Copyright © 2023, Western Developers Society
+  </main>
+  <script src="script.js"></script>
 </body>
+
 </html>
