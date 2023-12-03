@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,54 +8,84 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="pricing" href="./pricing.css">
     <link rel="icon" href="assets/link.png" type="image/x-icon">
-  </head>
-  <body>
-    
+</head>
+<body>
 
-    <div class="navbar">
-      <div class="pages">
-        <img src="assets/logo.png" alt="logo">
-        <a href="index.html">Home</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="teams.html">For Teams</a>
-        <a href="individuals.html">For Individuals</a>
-        <a href="mission.html">Mission</a>
-      </div>
-      <div class="general">
-        <a href="help.html">Help</a>
-        <a href="login.html">Login</a>
-        <a href="download.html" class="btn">Download</a>
-      </div>
+
+<!-- navbar -->
+<div class="navbar">
+
+    <!-- pages links-->
+    <ul style="list-style: none" class="pages">
+        <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+        <li class="hoverable"><a href="index.html">Home</a></li>
+        <li class="hoverable"><a href="pricing.html">Pricing</a></li>
+        <li class="hoverable"><a href="compare.html">Compare</a></li>
+        <li class="hoverable"><a href="help.html">Help</a></li>
+
+        <!-- download button -->
+        <li style="float:right" class="general">
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a class="download-link" href="download.html">Download</a>
+                    <div class="arrow"></div>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Windows</a>
+                    <a href="#">macOS</a>
+                    <a href="#">IOS</a>
+                    <a href="#">Android</a>
+                </div>
+            </div>
+        </li>
+
+
+        <!-- expand sign in & more menu -->
+        <li style="float:right">
+            <div onclick="openNav()" style="margin-right: 2em">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div id="mySidenav" class="sidenav" onmouseleave="closeNav()">
+                <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Colorblind modes</a>
+                <a href="#">Dark/Light mode</a>
+                <a href="#">Log in?</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="main">
+
+</div>
+
+<div class="container">
+    <h2>Plans And Pricing</h2>
+    <div class="price-row">
+        <div class="price-col">
+            <p>Basic</p>
+            <h3>Free</h3>
+            <ul>
+                <li>Simple, easy-to-use, and completely free!</li>
+                <li>Accessible voice to text feature</li>
+                <li>Basic note functions and features included!</li>
+            </ul>
+            <button>Get Started!</button>
+        </div>
+        <div class="price-col">
+            <p>Link Premium</p>
+            <h3>$0.99<span>/ month</span></h3>
+            <ul>
+                <li>Simple, easy-to-use, and completely free!</li>
+                <li>Accessible voice to text feature</li>
+                <li>Basic note functions and features included!</li>
+            </ul>
+            <button>Get Started!</button>
+        </div>
     </div>
-  <div class="main">
 
-  </div>
-
-  <div class="container">
-      <h2>Plans And Pricing</h2>
-      <div class="price-row">
-        <div class="price-col">
-          <p>Basic</p>
-          <h3>Free</h3>
-          <ul>
-            <li>Simple, easy-to-use, and completely free!</li>
-            <li>Accessible voice to text feature</li>
-            <li>Basic note functions and features included!</li>
-          </ul>
-          <button>Get Started!</button>
-        </div>
-        <div class="price-col">
-          <p>Link Premium</p>
-          <h3>$0.99<span>/ month</span></h3>
-          <ul>
-            <li>Simple, easy-to-use, and completely free!</li>
-            <li>Accessible voice to text feature</li>
-            <li>Basic note functions and features included!</li>
-          </ul>
-          <button>Get Started!</button>
-        </div>
-      </div>
-
-  </div>
-  </body>
+</div>
+</body>
 </html>
