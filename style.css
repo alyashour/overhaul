@@ -3,11 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--navbar-text), sans-serif;
 }
 
 /* Primary color variables */
 :root {
+    /* text */
+    --light-text: blue;
+    --navbar-text: "ADLaM Display";
     --btn-primary: #7D7DF7;
     --border: #C0BFBF;
     --link-color: #505F98;
@@ -17,25 +20,6 @@
     --background-color: #f8f9fa; /* Background color for price boxes */
     --btn-primary-hover: red;
     --shadow: rgba(0, 0, 0, 0.2); /* Shadow for depth */
-}
-
-/* Navbar styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--border);
-}
-
-.navbar a {
-    color: var(--link-color);
-}
-
-.pages {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    align-items: center;
-    gap: 24px;
 }
 
 .general {
@@ -141,19 +125,22 @@
 }
 
 /* Splash and other unique styles */
-.splash {
-    position: fixed;
-    bottom: 0;
+.splash, .phone {
+    display: block;
+    position: absolute;
+    top: 0;
     right: 0;
-    height: calc(100vh - 128px);
+}
+
+.splash {
+    height: 30%;
+    z-index: -1;
 }
 
 .phone {
-    z-index: 10;
-    position: fixed;
-    bottom: 48px;
-    right: 124px;
-    height: calc(90vh - 128px);
+    z-index: 1;
+    height: 400px;
+    width: auto;
 }
 
 .copy {
@@ -332,11 +319,6 @@ a.download-link {
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: var(--btn-primary);}
 
-  .hoverable > a {
-      font-size: xx-large;
-      text-decoration: none;
-  }
-
   
 /*Downloads page*/
 .downloadbtn {
@@ -512,11 +494,6 @@ a.download-link {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-
-.main {
-    transition: margin-left .5s;
-    padding: 20px;
 }
 
 @media screen and (max-height: 450px) {
