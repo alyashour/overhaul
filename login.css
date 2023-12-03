@@ -1,0 +1,82 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#ffffff rgba(255, 255, 255, 255); /* Light gray background */
+}
+
+.pages a,
+.general a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.navbar {
+    background-color: #3498db; /* Blue navbar */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust height as needed */
+}
+
+.login_form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    left: -300px;
+}
+
+.login_form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #3498db; /* Blue border */
+    border-radius: 4px;
+}
+
+.login_form input[type="submit"] {
+    background-color: #3498db; /* Blue submit button */
+    color: white;
+    cursor: pointer;
+}
+
+.login_form input[type="submit"]:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.Welcomeback
+{
+    position: absolute;
+    top: 87px;
+    left: 85px;
+    width: 700px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 2;
+    font-size:40px;
+    color:#00004C;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+}
+
+.loginPic
+{
+    position: absolute;
+    top: 87px;
+    left: 625px;
+    width: 700px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: -1;
+
+}
