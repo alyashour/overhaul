@@ -485,15 +485,15 @@ a.download-link {
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: var(--btn-primary);}
 
-footer {
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    height: 90px;
-    background-color: #D0DAEE;
-    padding: 30px 30px 10px 10px;
-}
+/*footer {*/
+/*    position:fixed;*/
+/*    bottom:0;*/
+/*    left:0;*/
+/*    width:100%;*/
+/*    height: 90px;*/
+/*    background-color: #D0DAEE;*/
+/*    padding: 30px 30px 10px 10px;*/
+/*}*/
 
 .sidenav {
     height: 100%;

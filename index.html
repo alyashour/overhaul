@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>InkLink</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./sidenav.css">
     <link rel="stylesheet" href="./home-style.css">
+    <!-- Add this in the <head> section of your HTML file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-ZmMhM1k8aqzqBqVnCBqdBRKgtUq59meZxXAg5iC8E+8p2h5uUqbpOjPNTaBXQfuo" crossorigin="anonymous">
     <link rel="icon" href="assets/link.png" type="image/x-icon">
 </head>
 
@@ -44,7 +45,7 @@
 
             <!-- expand sign in & more menu -->
             <li style="float:right">
-                <div onclick="openNav()" style="margin-right: 2em">
+                <div onmouseenter="openNav()" style="margin-right: 2em">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -82,10 +83,23 @@
     <span class="copy">Copyright © 2023, Western Developers Society </span>
 
     <!-- a sexy footer 😏-->
-    <footer>
-        <p>ouagadougou</p>
+    <footer class="bg-dark text-light p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Your Website</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Contact: info@example.com</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </main>
+
+<!--js baby-->
 <script src="script.js"></script>
+<!-- Add this before the closing </body> tag -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-VGy0UqVdAzl8H1JK5lBEULYOm3LJnvmfcx1SYtFFqUg2tsPNIkR1J5jlpeysFfN5" crossorigin="anonymous"></script>
 </body>
 </html>
