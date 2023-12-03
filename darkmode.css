@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #fff;
+    --text-color: #555;
+    --title-color: #000;
+}
+
+.dark-theme {
+    --background-color: #000;
+    --text-color: #999;
+    --title-color: #fff;
+}
+
+.colourblind-theme {
+    --background-color: #F05039;
+    --text-color: #A8B6CC;
+    --title-color: #3D65A5;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo img {
+    width: 80px;
+}
+
+nav ul {
+    width: 100%;
+    text-align: right;
+    list-style: none;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.toggle-btn {
+    background: #4864ff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.content {
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 80px;
+    font-family: serif;
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+.content h1 span {
+    font-family: serif;
+    font-size: 400px;
+    font-style: italic;
+}
+
+.pattern {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.pattern img {
+    width: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pattern img:nth-child(1) {
+    transform: rotate(-45deg) translate(-70px, 50px);
+    animation-delay: 0.5s;
+}
+
+.pattern img:nth-child(2) {
+    transform: rotate(-65deg) translate(0px, -40deg) scale(.8);
+    animation-delay: 1.5s;
+}
+
+@keyframes move {
+    100% {
+        margin-left: 40px;
+        margin-top: 20px;
+        opacity: 0.3;
+    }
+}

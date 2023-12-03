@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="/style.css">
 <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
+<link rel="stylesheet" href="darkmode.css">
 
 <style>
     :root {
@@ -74,11 +75,31 @@
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
+
         <div id="mySidenav" class="sidenav" onmouseleave="closeNav()">
             <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Colorblind modes</a>
-            <a href="#">Dark/Light mode</a>
+
+            <div class="toggle-btn" id="darkModeBtn">
+                <span>Dark Mode</span>
+            </div>
+
+            <div class="toggle-btn" id="colorBlindBtn">
+                <span>Colourblind Mode</span>
+            </div>
+
             <a href="#">Log in?</a>
         </div>
     </li>
 </ul>
+
+<script>
+    let darkModeBtn = document.getElementById("darkModeBtn");
+    darkModeBtn.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+    };
+
+    let colorBlindBtn = document.getElementById("colorBlindBtn");
+    colorBlindBtn.onclick = function() {
+        document.body.classList.toggle("colourblind-theme");
+    };
+</script>

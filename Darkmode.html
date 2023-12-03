@@ -1,0 +1,37 @@
+<body>
+    <div class="header">
+        <nav>
+            <a href="#" class="logo"><img src="assets/logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Comparison</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="content">
+            <h1>Hello!</h1>
+            <h1><span>We are</span> INK LINK</h1>
+            <p>We are Ink Link, the new accessible and easy-to-use note-taking application</p>
+            <a href="#">Hire Me</a>
+        </div>
+    </div>
+    <div class="pattern">
+        <img src="assets/iphone.png">
+    </div>
+
+    <script>
+        let darkModeBtn = document.getElementById("darkModeBtn");
+        darkModeBtn.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+        };
+
+        let colorBlindBtn = document.getElementById("colorBlindBtn");
+        colorBlindBtn.onclick = function() {
+            document.body.classList.toggle("colourblind-theme");
+        };
+    </script>
+</body>
+
