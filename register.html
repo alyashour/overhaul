@@ -7,15 +7,72 @@
     <title>InkLink</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/link.png" type="image/x-icon">
+
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .box {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .box img {
+            max-width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
 <!-- navbar -->
 <div id="navbar-placeholder"></div>
 
+
 <div class="main">
-    Register
+    <h1 style="text-align: center">Join the Inklink Family!</h1>
+
+    <!-- bubble div -->
+    <div class="container">
+        <div class="box1">
+            <h2>Box1</h2>
+            <img src="" alt="">
+        </div>
+        <div class="box2">
+            <h2>Box1</h2>
+            <img src="" alt="">
+        </div>
+        <div class="box3">
+            <h2>Box1</h2>
+            <img src="" alt="">
+        </div>
+        <div class="box4">
+            <h2>Box1</h2>
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <button>Sign up here.</button>
+
+    <h2>Features:</h2>
+    <ul>
+        <li>Add images with alt text</li>
+        <li>Allow users to enlarge font sizes</li>
+        <li>Keeps contrast sensitivity in mind</li>
+        <li>Includes ZOOM</li>
+    </ul>
+
+    <a><h1>Become and Inkling today!</h1></a>
 </div>
+
+
 <script src="script.js"></script>
 </body>
 </html>
