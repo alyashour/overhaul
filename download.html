@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>InkLink</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/link.png" type="image/x-icon">
-  </head>
-  <body>
+</head>
+<body>
     <main>
         <!-- navbar -->
         <div class="navbar">
-
             <!-- pages links-->
             <ul style="list-style: none" class="pages">
                 <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
@@ -55,37 +55,50 @@
             </ul>
         </div>
 
-    </main>
-
     <div class="container">
         <div class="box">
             <strong>Windows</strong>
-            <div class="downloadbtn">
-                <button>Download</button>
-                <img src="assets/Windows.png" alt="logo"> 
-            </div>
-        </div>
-        <div class="box">
-            <strong>macOS</strong>
-            <div class="downloadbtn">
-                <button>Download</button>
-                <img src="assets/Mac.png" alt="logo"> 
-            </div>
-        </div>
-        <div class="box">
-            <strong>IOS</strong>
-            <div class="downloadbtn">
+            <div class="downloadbtn">  
+                <div class="image-container">
+                    <img style= " width: auto;
+                    height: 100%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 100%; "src="assets/Windows.png" alt="Windows">
+                </div>
                 <button>Download</button>
             </div>
         </div>
         <div class="box">
             <strong>Android</strong>
             <div class="downloadbtn">
+                <div class="image-container">
+                    <img src="assets/android.png" alt="Android">
+                </div>
                 <button>Download</button>
             </div>
         </div>
-    
-  </div>
-	<script src="script.js"></script>
-  </body>
+        <div class="box">
+            <strong>IOS</strong>
+            <div class="downloadbtn">
+                <div class="image-container">
+                    <img src="assets/iphone.png" alt="iOS">
+                </div>
+                <button>Download</button>
+            </div>
+        </div>
+        <div class="box">
+            <strong>macOS</strong>
+            <div class="downloadbtn">
+                <div class="image-container">
+                    <img src="assets/Mac.png" alt="macOS">
+                </div>
+                <button>Download</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
