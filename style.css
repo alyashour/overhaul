@@ -15,6 +15,7 @@
     --btn-secondary: #111b47; /* Secondary button color for contrast */
     --text-muted: #6c757d; /* Muted text for less important elements */
     --background-color: #f8f9fa; /* Background color for price boxes */
+    --btn-primary-hover: red;
     --shadow: rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
@@ -214,7 +215,7 @@
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    font-family: 'Roboto';
+    font-family: 'Roboto', serif;
     border-bottom: 1px solid var(--border);
     padding-bottom: 16px;
 }
@@ -223,7 +224,7 @@
     width: 80%;
     height: 100%;
     background-image: linear-gradient(0deg, var(--border) 5%, #ffffff 5%, #ffffff 100%);
-    background-size: 28.28px 28.28px;
+    background-size: 28px 28px;
 }
 
 .writing {
@@ -235,7 +236,7 @@
     border: none;
     border-left: 1px solid red;
     outline: none;
-    line-height: 28.28px;
+    line-height: 28px;
     font-size: 20px;
 }
 
@@ -291,20 +292,6 @@ button:hover {
     gap: 20px;
     
 }
-
-.box {
-    background-color: #F6F6F6;
-    padding: 20px;
-    border-radius: 15px;
-    color: #23272A;
-    display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center;
-    text-align: center;
-    font-size: 40px;
-    font-family: sans-serif;
-}
-
   
 /*Download Button CSS*/
 
@@ -318,25 +305,10 @@ a.download-link {
 .dropbtn {
     background-color: var(--btn-primary);
     color: white;
-    padding: 8px 24px;
-    padding-left: 12px;
+    padding: 8px 24px 8px 12px;
     font-size: 16px;
     border: none;
     border-radius: 20px;
-  }
-
-  .dropbtn::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 8px; /* Adjust the value to position the arrow as desired */
-    transform: translateY(-50%)rotate(45deg);
-    border: solid white;
-    border-width: 0px 0px 2px 2px;
-    border-width: 0 0 2px 2px;
-    display: inline-block;
-    padding: 3px;
-    transition: transform 0.3s ease; /* Optional transition effect */
   }
   
   /* Rotate the arrow on dropdown hover */
@@ -356,10 +328,8 @@ a.download-link {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 110px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 25;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
   }
   
   /* Links inside the dropdown */
@@ -442,13 +412,11 @@ a.download-link {
     color: white;
     /* Other button styles */
   }
-    
 
 .dropbtn {
     background-color: var(--btn-primary);
     color: white;
-    padding: 8px 24px;
-    padding-left: 12px;
+    padding: 8px 24px 8px 12px;
     font-size: 16px;
     border: none;
     border-radius: 20px;
@@ -461,7 +429,7 @@ a.download-link {
     right: 8px; /* Adjust the value to position the arrow as desired */
     transform: translateY(-50%)rotate(45deg);
     border: solid white;
-    border-width: 0px 0px 2px 2px;
+    border-width: 0 0 2px 2px;
     display: inline-block;
     padding: 3px;
     transition: transform 0.3s ease; /* Optional transition effect */
@@ -484,7 +452,7 @@ a.download-link {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 110px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 25;
   }
   
