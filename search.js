@@ -1,5 +1,3 @@
-
-
 function getHTMLFromText(input){
     let arr = input.split(" ");
     return arr.reduce((a, b) => {
