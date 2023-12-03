@@ -10,62 +10,21 @@
     <link rel="icon" href="assets/link.png" type="image/x-icon">
 </head>
 <body>
-    <main>
-        <!-- navbar -->
-        <div class="navbar">
-            <!-- pages links-->
-            <ul style="list-style: none" class="pages">
-                <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
-                <li class="hoverable"><a href="index.html">Home</a></li>
-                <li class="hoverable"><a href="pricing.html">Pricing</a></li>
-                <li class="hoverable"><a href="compare.html">Compare</a></li>
-                <li class="hoverable"><a href="help.html">Help</a></li>
-
-                <!-- download button -->
-                <li style="float:right" class="general">
-                    <div class="dropdown">
-                        <div class="dropbtn">
-                            <a class="download-link" href="download.html">Download</a>
-                            <div class="arrow"></div>
-                        </div>
-                        <div class="dropdown-content">
-                            <a href="#">Windows</a>
-                            <a href="#">macOS</a>
-                            <a href="#">IOS</a>
-                            <a href="#">Android</a>
-                        </div>
-                    </div>
-                </li>
-
-
-                <!-- expand sign in & more menu -->
-                <li style="float:right">
-                    <div onclick="openNav()" style="margin-right: 2em">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                    <div id="mySidenav" class="sidenav" onmouseleave="closeNav()">
-                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="#">Colorblind modes</a>
-                        <a href="#">Dark/Light mode</a>
-                        <a href="#">Log in?</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+<main>
+    <!-- navbar -->
+    <div id="navbar-placeholder"></div>
 
     <div class="container">
         <div class="box">
             <strong>Windows</strong>
-            <div class="downloadbtn">  
+            <div class="downloadbtn">
                 <div class="image-container">
-                    <img style= " width: auto;
+                    <img style=" width: auto;
                     height: 100%;
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
-                    max-width: 100%; "src="assets/Windows.png" alt="Windows">
+                    max-width: 100%; " src="assets/Windows.png" alt="Windows">
                 </div>
                 <button>Download</button>
             </div>
@@ -98,7 +57,7 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+</main>
+<script src="script.js"></script>
 </body>
-
 </html>

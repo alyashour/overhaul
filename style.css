@@ -47,23 +47,6 @@
 }
 
 /* Button styles */
-.btn {
-    text-decoration: none;
-    background-color: var(--btn-primary);
-    padding: 12px 20px;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 6px;
-    margin-top: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: var(--btn-primary-dark);
-    color: white; /* Ensuring text remains white on hover */
-}
 
 /* Container and pricing styles */
 .container {

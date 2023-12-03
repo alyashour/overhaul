@@ -1,5 +1,8 @@
-document.addEventListener("DOMContentLoaded", attachListeners);
-document.addEventListener("DOMContentLoaded", checkPage);
+document.addEventListener("DOMContentLoaded", function() {
+    attachListeners();
+    checkPage();
+    fetch_navbar_footer();
+});
 
 function attachListeners() {
     document.querySelector('.login_form')?.addEventListener('submit', login);
@@ -61,4 +64,16 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
+}
+
+function fetch_navbar_footer() {
+    // Load header
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("navbar-placeholder").innerHTML = data);
+
+    // Load footer
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer-placeholder").innerHTML = data);
 }

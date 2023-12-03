@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/style.css">
+<div class="navbar">
+    <!-- pages links-->
+    <ul style="list-style: none" class="pages">
+        <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+        <li class="hoverable"><a href="index.html">Home</a></li>
+        <li class="hoverable"><a href="pricing.html">Pricing</a></li>
+        <li class="hoverable"><a href="compare.html">Compare</a></li>
+        <li class="hoverable"><a href="help.html">Help</a></li>
+
+        <!-- download button -->
+        <li style="float:right" class="general">
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a class="download-link" href="download.html">Download</a>
+                    <div class="arrow"></div>
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Windows</a>
+                    <a href="#">macOS</a>
+                    <a href="#">IOS</a>
+                    <a href="#">Android</a>
+                </div>
+            </div>
+        </li>
+
+
+        <!-- expand sign in & more menu -->
+        <li style="float:right">
+            <div onmouseenter="openNav()" style="margin-right: 2em">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div id="mySidenav" class="sidenav" onmouseleave="closeNav()">
+                <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Colorblind modes</a>
+                <a href="#">Dark/Light mode</a>
+                <a href="#">Log in?</a>
+            </div>
+        </li>
+    </ul>
+</div>
