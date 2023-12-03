@@ -40,6 +40,18 @@
     }
 </style>
 
+<script>
+    let darkModeBtn = document.getElementById("darkModeBtn");
+    darkModeBtn.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+    };
+
+    let colorBlindBtn = document.getElementById("colorBlindBtn");
+    colorBlindBtn.onclick = function() {
+        document.body.classList.toggle("colourblind-theme");
+    };
+</script>
+
 <!-- pages links-->
 <ul style="top: 0; list-style: none; margin-top: 0" class="navbar">
     <!-- logo -->
@@ -59,10 +71,10 @@
                 <div class="arrow"></div>
             </div>
             <div class="dropdown-content">
-                <a href="#">Windows</a>
-                <a href="#">macOS</a>
-                <a href="#">IOS</a>
-                <a href="#">Android</a>
+                <a href="download.html">Windows</a>
+                <a href="download.html">macOS</a>
+                <a href="download.html">IOS</a>
+                <a href="download.html">Android</a>
             </div>
         </div>
     </li>
@@ -91,15 +103,3 @@
         </div>
     </li>
 </ul>
-
-<script>
-    let darkModeBtn = document.getElementById("darkModeBtn");
-    darkModeBtn.onclick = function() {
-        document.body.classList.toggle("dark-theme");
-    };
-
-    let colorBlindBtn = document.getElementById("colorBlindBtn");
-    colorBlindBtn.onclick = function() {
-        document.body.classList.toggle("colourblind-theme");
-    };
-</script>
