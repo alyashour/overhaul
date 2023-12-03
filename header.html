@@ -2,9 +2,13 @@
 <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
 
 <style>
+    :root {
+        --navbar-color: rgba(96, 130, 182, .9);
+        --navbar-text-color: midnightblue;
+    }
     a {
         font-family: "ADLaM Display", sans-serif;
-        color: #5FB3F9;
+        color: var(--navbar-text-color);
         text-decoration: none;
     }
 
@@ -30,7 +34,7 @@
         gap: 24px;
         margin-top: 10px;
         z-index: 100;
-        background-color: rgba(255, 255, 255, .9);
+        background-color: var(--navbar-color);
         transition: background-color 0.3s ease;
     }
 </style>

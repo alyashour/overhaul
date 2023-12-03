@@ -11,7 +11,7 @@
     /* text */
     --light-text: blue;
     --navbar-text: "ADLaM Display";
-    --btn-primary: #7D7DF7;
+    --btn-primary: midnightblue;
     --border: #C0BFBF;
     --link-color: #505F98;
     --btn-primary-dark: #2f4711;
@@ -247,11 +247,10 @@ button {
 }
 
 button:hover {
-    background-color: var(--btn-primary-hover); /* Change color on hover */
+    /*color: white; !* Change color on hover *!*/
 }
+
 /*Downloads page*/
-
-
 .container {
     margin: 80px auto;
     width: 800px;
@@ -264,13 +263,6 @@ button:hover {
 }
   
 /*Download Button CSS*/
-
-a.download-link {
-    text-decoration: none;
-    color: white;
-    /* Other button styles */
-  }
-    
 
 .dropbtn {
     background-color: var(--btn-primary);
@@ -311,7 +303,7 @@ a.download-link {
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  /*.dropdown-content a:hover {background-color: #ddd;}*/
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
@@ -442,7 +434,7 @@ a.download-link {
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  /*.dropdown-content a:hover {background-color: #ddd;}*/
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}

@@ -9,69 +9,73 @@
     <link rel="icon" href="assets/link.png" type="image/x-icon">
 
     <style>
-        .container {
-            display: flex;
-            flex-wrap: nowrap;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ecf0f1; /* Optional background color */
         }
 
-        .box {
-            flex: 1;
-            margin: 10px;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        #header {
             text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #fff;
         }
 
-        .box img {
-            max-width: 100%;
-            border-radius: 50%;
-            margin-bottom: 10px;
+        #content {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .feature-box {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 150px;
+            margin: 10px;
+            border-radius: 5px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Styling individual boxes */
+        .accessible {
+            background-color: #2ecc71;
+        }
+
+        .affordable {
+            background-color: #e74c3c;
+        }
+
+        .cloud {
+            background-color: #f39c12;
+        }
+
+        .convenient {
+            background-color: #9b59b6;
         }
     </style>
 </head>
 <body>
 
-<!-- navbar -->
-<div id="navbar-placeholder"></div>
-
-
-<div class="main">
-    <h1 style="text-align: center">Join the Inklink Family!</h1>
-
-    <!-- bubble div -->
-    <div class="container">
-        <div class="box1">
-            <h2>Box1</h2>
-            <img src="" alt="">
-        </div>
-        <div class="box2">
-            <h2>Box1</h2>
-            <img src="" alt="">
-        </div>
-        <div class="box3">
-            <h2>Box1</h2>
-            <img src="" alt="">
-        </div>
-        <div class="box4">
-            <h2>Box1</h2>
-            <img src="" alt="">
-        </div>
-    </div>
-
-    <button>Sign up here.</button>
-
-    <h2>Features:</h2>
-    <ul>
-        <li>Add images with alt text</li>
-        <li>Allow users to enlarge font sizes</li>
-        <li>Keeps contrast sensitivity in mind</li>
-        <li>Includes ZOOM</li>
-    </ul>
-
-    <a><h1>Become and Inkling today!</h1></a>
+<!-- header -->
+<div id="header">
+    <h1>Your Header Content</h1>
 </div>
 
+<!-- Feature boxes -->
+<div id="content">
+    <div class="feature-box accessible" style="background-image: url('your-accessible-image.jpg');">Accessible</div>
+    <div class="feature-box affordable" style="background-image: url('your-affordable-image.jpg');">Affordable</div>
+    <div class="feature-box cloud" style="background-image: url('your-cloud-image.jpg');">Cloud</div>
+    <div class="feature-box convenient" style="background-image: url('your-convenient-image.jpg');">Convenient</div>
+</div>
 
 <script src="script.js"></script>
 </body>
