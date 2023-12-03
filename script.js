@@ -68,12 +68,12 @@ function closeNav() {
 
 function fetch_navbar_footer() {
     // Load header
-    fetch("header.html")
+    fetch("/header.html")
         .then(response => response.text())
         .then(data => document.getElementById("navbar-placeholder").innerHTML = data);
 
     // Load footer
-    fetch("footer.html")
+    fetch("/footer.html")
         .then(response => response.text())
         .then(data => document.getElementById("footer-placeholder").innerHTML = data);
 }

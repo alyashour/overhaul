@@ -35,16 +35,17 @@
 /* Container and pricing styles */
 .container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     background: #ffffff;
     text-align: center;
-    padding: 2% 0;
+    padding: 2% 7%;
 }
 
-.container h2 {
+.main h2 {
     color: black;
-    font-size: 36px;
-    margin-bottom: 2rem;
+    font-size: 60px;
+    margin-bottom: 8%;
+    text-align: center;
 }
 
 .price-row {
@@ -56,12 +57,13 @@
 .price-col {
     background: var(--background-color);
     padding: 40px 30px; /* Adjusted padding for slimmer look */
-    border-radius: 10px;
+    border-radius: 30px;
     color: black;
     box-shadow: 0 4px 8px var(--shadow);
     transition: transform 0.3s ease;
     width: 300px; /* Fixed width for slimmer boxes */
-    min-height: 450px; /* Fixed min-height for longer boxes */
+    max-height: 450px; /* Fixed min-height for longer boxes */
+    
 }
 
 .price-col:hover {
