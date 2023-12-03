@@ -40,18 +40,6 @@
     }
 </style>
 
-<script>
-    let darkModeBtn = document.getElementById("darkModeBtn");
-    darkModeBtn.onclick = function() {
-        document.body.classList.toggle("dark-theme");
-    };
-
-    let colorBlindBtn = document.getElementById("colorBlindBtn");
-    colorBlindBtn.onclick = function() {
-        document.body.classList.toggle("colourblind-theme");
-    };
-</script>
-
 <!-- pages links-->
 <ul style="top: 0; list-style: none; margin-top: 0" class="navbar">
     <!-- logo -->
@@ -99,7 +87,19 @@
                 <span>Colourblind Mode</span>
             </div>
 
-            <a href="#">Log in?</a>
+            <a href="login.html">Log in?</a>
         </div>
     </li>
 </ul>
+
+<script>
+    let darkModeBtn = document.getElementById("darkModeBtn");
+    darkModeBtn.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+    };
+
+    let colorBlindBtn = document.getElementById("colorBlindBtn");
+    colorBlindBtn.onclick = function() {
+        document.body.classList.toggle("colourblind-theme");
+    };
+</script>
